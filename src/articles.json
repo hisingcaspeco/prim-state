@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Understanding React",
+    "content": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components.",
+    "author": "John Doe",
+    "category": "Frontend Development",
+    "createdAt": "2023-01-15T10:00:00Z",
+    "updatedAt": "2023-01-20T14:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Getting Started with Zustand",
+    "content": "Zustand is a small, fast, and scalable state management library for React apps. It is minimal and easy to integrate.",
+    "author": "Jane Smith",
+    "category": "State Management",
+    "createdAt": "2023-03-05T12:30:00Z",
+    "updatedAt": "2023-03-06T15:45:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Exploring TypeScript",
+    "content": "TypeScript is a superset of JavaScript that adds optional static typing to the language.",
+    "author": "Alice Johnson",
+    "category": "Programming Languages",
+    "createdAt": "2023-02-10T09:00:00Z",
+    "updatedAt": "2023-02-15T11:15:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Introduction to Next.js",
+    "content": "Next.js is a React framework that enables server-side rendering and static site generation.",
+    "author": "Bob Brown",
+    "category": "Frameworks",
+    "createdAt": "2023-04-01T08:00:00Z",
+    "updatedAt": "2023-04-10T13:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Building Responsive Layouts",
+    "content": "Learn how to create responsive layouts using modern CSS techniques like Flexbox and Grid.",
+    "author": "Charlie Davis",
+    "category": "CSS",
+    "createdAt": "2023-05-15T07:00:00Z",
+    "updatedAt": "2023-05-18T10:00:00Z"
+  }
+]
