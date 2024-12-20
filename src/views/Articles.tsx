@@ -6,7 +6,7 @@ import { IconMaximize, IconPlus } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
 
 export const Articles = () => {
-    const { articles, selectArticle, selectedArticle } = useArticleStore();
+    const { articles, selectArticle, selectedArticle, editArticle } = useArticleStore();
     const [opened, { open, close }] = useDisclosure(false);
     const navigate = useNavigate();
 
@@ -82,7 +82,7 @@ export const Articles = () => {
                 </ActionIcon>
                 <Title order={1}>{selectedArticle ? "Edit Article" : "Create Article"}</Title>
 
-                <EditArticle article={selectedArticle} />
+                <EditArticle article={editArticle} />
             </Drawer>
         </>
     );
