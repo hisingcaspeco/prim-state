@@ -33,12 +33,13 @@ export const Articles = () => {
     return (
         <>
             <Flex my={"md"} align={"center"} justify={"space-between"}>
-                <Title order={1}>Articles</Title>
+                <Title order={1} size={"h3"}>
+                    Articles
+                </Title>
                 <ActionIcon
                     size={"xl"}
                     radius={"xl"}
-                    color={"blue.4"}
-                    variant="filled"
+                    variant="light"
                     aria-label="Add article"
                     onClick={onCreateArticle}
                 >
@@ -68,7 +69,9 @@ export const Articles = () => {
                 >
                     <IconMaximize />
                 </ActionIcon>
-                <Title order={1}>{selectedArticle ? "Edit Article" : "Create Article"}</Title>
+                <Title order={3} mb={"md"}>
+                    {selectedArticle ? "Edit Article" : "Create Article"}
+                </Title>
 
                 <EditArticle article={editArticle} />
             </Drawer>

@@ -61,7 +61,7 @@ export const EditArticle = ({ article }: EditArticleProps) => {
                     {...form.getInputProps("category")}
                 />
                 <Button disabled={isSubmitDisabled} size={"md"} type="submit" variant="filled">
-                    Save
+                    {article ? "Update" : "Create"}
                 </Button>
             </Stack>
         </form>
