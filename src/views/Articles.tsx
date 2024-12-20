@@ -1,4 +1,4 @@
-import { ActionIcon, Drawer, Flex, Table, Title } from "@mantine/core";
+import { ActionIcon, Drawer, Flex, ModalBaseOverlayProps, Table, Title } from "@mantine/core";
 import { Article, useArticleStore } from "../stores/useArticleStore.ts";
 import { useDisclosure } from "@mantine/hooks";
 import { EditArticle } from "../components/EditArticle.tsx";
@@ -46,6 +46,10 @@ export const Articles = () => {
         navigate("/articles/" + selectedArticle?.id);
     };
 
+    const modalOverlayProps: ModalBaseOverlayProps = {
+        backgroundOpacity: 0.15,
+    };
+
     return (
         <>
             <Flex my={"md"} align={"center"} justify={"space-between"}>
@@ -65,7 +69,14 @@ export const Articles = () => {
                 <Table.Thead>{ths}</Table.Thead>
                 <Table.Tbody>{rows}</Table.Tbody>
             </Table>
-            <Drawer position={"right"} size={"md"} opened={opened} onClose={close} pos={"relative"}>
+            <Drawer
+                overlayProps={modalOverlayProps}
+                position={"right"}
+                size={"lg"}
+                opened={opened}
+                onClose={close}
+                pos={"relative"}
+            >
                 <ActionIcon
                     pos={"absolute"}
                     top={12}
