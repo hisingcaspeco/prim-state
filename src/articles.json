@@ -1,47 +1,273 @@
 [
   {
     "id": "1",
-    "title": "Understanding React",
-    "content": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components.",
-    "author": "John Doe",
-    "category": "Frontend Development",
-    "createdAt": "2023-01-15T10:00:00Z",
-    "updatedAt": "2023-01-20T14:00:00Z"
+    "title": "Margherita Pizza",
+    "content": "A classic Italian pizza with fresh tomatoes, mozzarella cheese, basil, and olive oil.",
+    "category": "Main Course",
+    "price": 120,
+    "createdAt": "2023-06-10T10:30:00Z",
+    "updatedAt": "2023-06-12T14:00:00Z"
   },
   {
     "id": "2",
-    "title": "Getting Started with Zustand",
-    "content": "Zustand is a small, fast, and scalable state management library for React apps. It is minimal and easy to integrate.",
-    "author": "Jane Smith",
-    "category": "State Management",
-    "createdAt": "2023-03-05T12:30:00Z",
-    "updatedAt": "2023-03-06T15:45:00Z"
+    "title": "Caesar Salad",
+    "content": "Romaine lettuce, parmesan cheese, croutons, and creamy Caesar dressing. Add chicken for extra protein.",
+    "category": "Appetizer",
+    "price": 85,
+    "createdAt": "2023-07-01T08:45:00Z",
+    "updatedAt": "2023-07-03T10:15:00Z"
   },
   {
     "id": "3",
-    "title": "Exploring TypeScript",
-    "content": "TypeScript is a superset of JavaScript that adds optional static typing to the language.",
-    "author": "Alice Johnson",
-    "category": "Programming Languages",
-    "createdAt": "2023-02-10T09:00:00Z",
-    "updatedAt": "2023-02-15T11:15:00Z"
+    "title": "Beef Stroganoff",
+    "content": "Tender beef in a creamy mushroom sauce, served with egg noodles and a side of steamed vegetables.",
+    "category": "Main Course",
+    "price": 150,
+    "createdAt": "2023-07-15T11:00:00Z",
+    "updatedAt": "2023-07-18T13:30:00Z"
   },
   {
     "id": "4",
-    "title": "Introduction to Next.js",
-    "content": "Next.js is a React framework that enables server-side rendering and static site generation.",
-    "author": "Bob Brown",
-    "category": "Frameworks",
-    "createdAt": "2023-04-01T08:00:00Z",
-    "updatedAt": "2023-04-10T13:00:00Z"
+    "title": "Garlic Bread",
+    "content": "Crispy bread topped with garlic butter and herbs. Perfect as a starter or side dish.",
+    "category": "Side Dish",
+    "price": 50,
+    "createdAt": "2023-07-20T09:30:00Z",
+    "updatedAt": "2023-07-21T10:00:00Z"
   },
   {
     "id": "5",
-    "title": "Building Responsive Layouts",
-    "content": "Learn how to create responsive layouts using modern CSS techniques like Flexbox and Grid.",
-    "author": "Charlie Davis",
-    "category": "CSS",
-    "createdAt": "2023-05-15T07:00:00Z",
-    "updatedAt": "2023-05-18T10:00:00Z"
+    "title": "Chicken Tikka Masala",
+    "content": "Grilled chicken in a spiced tomato cream sauce, served with basmati rice and naan bread.",
+    "category": "Main Course",
+    "price": 140,
+    "createdAt": "2023-08-05T12:20:00Z",
+    "updatedAt": "2023-08-06T14:50:00Z"
+  },
+  {
+    "id": "6",
+    "title": "Soft Drinks",
+    "content": "Choose from Coke, Sprite, or Fanta. Served chilled.",
+    "category": "Beverage",
+    "price": 30,
+    "createdAt": "2023-09-01T09:15:00Z",
+    "updatedAt": "2023-09-03T10:45:00Z"
+  },
+  {
+    "id": "7",
+    "title": "Chocolate Lava Cake",
+    "content": "A warm chocolate cake with a gooey center, served with vanilla ice cream.",
+    "category": "Dessert",
+    "price": 90,
+    "createdAt": "2023-09-10T11:00:00Z",
+    "updatedAt": "2023-09-12T14:00:00Z"
+  },
+  {
+    "id": "8",
+    "title": "Espresso Coffee",
+    "content": "Rich and strong espresso made with freshly ground coffee beans.",
+    "category": "Beverage",
+    "price": 25,
+    "createdAt": "2023-09-15T08:00:00Z",
+    "updatedAt": "2023-09-16T09:00:00Z"
+  },
+  {
+    "id": "9",
+    "title": "French Fries",
+    "content": "Golden, crispy French fries with a side of ketchup or mayo.",
+    "category": "Side Dish",
+    "price": 45,
+    "createdAt": "2023-10-01T13:00:00Z",
+    "updatedAt": "2023-10-02T15:00:00Z"
+  },
+  {
+    "id": "10",
+    "title": "Grilled Salmon",
+    "content": "Freshly grilled salmon served with lemon butter sauce, roasted potatoes, and asparagus.",
+    "category": "Main Course",
+    "price": 200,
+    "createdAt": "2023-10-05T18:30:00Z",
+    "updatedAt": "2023-10-06T20:00:00Z"
+  },
+  {
+    "id": "11",
+    "title": "Vegetable Stir-Fry",
+    "content": "A mix of fresh vegetables sautéed in a savory soy-ginger sauce, served over steamed rice.",
+    "category": "Main Course",
+    "price": 110,
+    "createdAt": "2023-10-10T12:30:00Z",
+    "updatedAt": "2023-10-11T14:00:00Z"
+  },
+  {
+    "id": "12",
+    "title": "Tomato Soup",
+    "content": "A creamy and flavorful tomato soup garnished with basil and served with crusty bread.",
+    "category": "Appetizer",
+    "price": 70,
+    "createdAt": "2023-10-15T11:45:00Z",
+    "updatedAt": "2023-10-16T13:00:00Z"
+  },
+  {
+    "id": "13",
+    "title": "Club Sandwich",
+    "content": "A triple-layered sandwich with turkey, bacon, lettuce, tomato, and mayo, served with a side of fries.",
+    "category": "Main Course",
+    "price": 130,
+    "createdAt": "2023-10-20T10:00:00Z",
+    "updatedAt": "2023-10-21T12:30:00Z"
+  },
+  {
+    "id": "14",
+    "title": "Margarita Cocktail",
+    "content": "A refreshing blend of tequila, lime juice, and triple sec, served over ice with a salted rim.",
+    "category": "Beverage",
+    "price": 85,
+    "createdAt": "2023-10-25T19:00:00Z",
+    "updatedAt": "2023-10-26T21:00:00Z"
+  },
+  {
+    "id": "15",
+    "title": "Vegetarian Lasagna",
+    "content": "Layers of pasta, ricotta, spinach, and marinara sauce, topped with melted mozzarella.",
+    "category": "Main Course",
+    "price": 140,
+    "createdAt": "2023-11-01T17:15:00Z",
+    "updatedAt": "2023-11-02T18:30:00Z"
+  },
+  {
+    "id": "16",
+    "title": "Cheesecake",
+    "content": "A rich and creamy cheesecake with a graham cracker crust, topped with fresh strawberries.",
+    "category": "Dessert",
+    "price": 95,
+    "createdAt": "2023-11-05T15:45:00Z",
+    "updatedAt": "2023-11-06T17:00:00Z"
+  },
+  {
+    "id": "17",
+    "title": "Chicken Wings",
+    "content": "Crispy chicken wings tossed in your choice of buffalo, BBQ, or garlic parmesan sauce.",
+    "category": "Appetizer",
+    "price": 75,
+    "createdAt": "2023-11-10T16:00:00Z",
+    "updatedAt": "2023-11-11T18:15:00Z"
+  },
+  {
+    "id": "18",
+    "title": "Lemonade",
+    "content": "Freshly squeezed lemons mixed with just the right amount of sweetness and ice.",
+    "category": "Beverage",
+    "price": 30,
+    "createdAt": "2023-11-15T14:30:00Z",
+    "updatedAt": "2023-11-16T16:00:00Z"
+  },
+  {
+    "id": "19",
+    "title": "Pan-Seared Scallops",
+    "content": "Tender scallops seared to perfection, served with a white wine sauce and roasted vegetables.",
+    "category": "Main Course",
+    "price": 220,
+    "createdAt": "2023-11-20T18:45:00Z",
+    "updatedAt": "2023-11-21T20:30:00Z"
+  },
+  {
+    "id": "20",
+    "title": "Tiramisu",
+    "content": "An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cream, and cocoa powder.",
+    "category": "Dessert",
+    "price": 90,
+    "createdAt": "2023-11-25T21:00:00Z",
+    "updatedAt": "2023-11-26T22:15:00Z"
+  },
+  {
+    "id": "21",
+    "title": "Fish and Chips",
+    "content": "Crispy battered fish served with golden fries and a side of tartar sauce.",
+    "category": "Main Course",
+    "price": 140,
+    "createdAt": "2023-12-01T12:00:00Z",
+    "updatedAt": "2023-12-02T14:00:00Z"
+  },
+  {
+    "id": "22",
+    "title": "Greek Salad",
+    "content": "A refreshing salad with cucumbers, tomatoes, olives, feta cheese, and olive oil dressing.",
+    "category": "Appetizer",
+    "price": 80,
+    "createdAt": "2023-12-05T10:30:00Z",
+    "updatedAt": "2023-12-06T12:45:00Z"
+  },
+  {
+    "id": "23",
+    "title": "BBQ Ribs",
+    "content": "Slow-cooked pork ribs glazed with smoky barbecue sauce, served with coleslaw and cornbread.",
+    "category": "Main Course",
+    "price": 200,
+    "createdAt": "2023-12-07T18:00:00Z",
+    "updatedAt": "2023-12-08T19:30:00Z"
+  },
+  {
+    "id": "24",
+    "title": "Shrimp Cocktail",
+    "content": "Chilled shrimp served with a tangy cocktail sauce and lemon wedges.",
+    "category": "Appetizer",
+    "price": 95,
+    "createdAt": "2023-12-10T16:45:00Z",
+    "updatedAt": "2023-12-11T18:15:00Z"
+  },
+  {
+    "id": "25",
+    "title": "Minestrone Soup",
+    "content": "A hearty Italian vegetable soup with pasta and beans in a savory tomato broth.",
+    "category": "Appetizer",
+    "price": 75,
+    "createdAt": "2023-12-12T11:00:00Z",
+    "updatedAt": "2023-12-13T12:30:00Z"
+  },
+  {
+    "id": "26",
+    "title": "Chocolate Mousse",
+    "content": "A rich and creamy chocolate mousse topped with whipped cream and dark chocolate shavings.",
+    "category": "Dessert",
+    "price": 85,
+    "createdAt": "2023-12-15T15:30:00Z",
+    "updatedAt": "2023-12-16T17:00:00Z"
+  },
+  {
+    "id": "27",
+    "title": "Grilled Veggie Wrap",
+    "content": "A healthy wrap filled with grilled zucchini, bell peppers, hummus, and fresh spinach.",
+    "category": "Main Course",
+    "price": 120,
+    "createdAt": "2023-12-18T13:15:00Z",
+    "updatedAt": "2023-12-19T14:45:00Z"
+  },
+  {
+    "id": "28",
+    "title": "Hot Chocolate",
+    "content": "A warm and comforting drink made with rich chocolate and topped with whipped cream.",
+    "category": "Beverage",
+    "price": 45,
+    "createdAt": "2023-12-20T08:00:00Z",
+    "updatedAt": "2023-12-21T09:30:00Z"
+  },
+  {
+    "id": "29",
+    "title": "Spaghetti Bolognese",
+    "content": "Classic spaghetti served with a rich and savory meat sauce, topped with parmesan cheese.",
+    "category": "Main Course",
+    "price": 135,
+    "createdAt": "2023-12-22T19:00:00Z",
+    "updatedAt": "2023-12-23T20:45:00Z"
+  },
+  {
+    "id": "30",
+    "title": "Apple Pie",
+    "content": "A classic dessert made with spiced apples and a buttery crust, served warm with vanilla ice cream.",
+    "category": "Dessert",
+    "price": 95,
+    "createdAt": "2023-12-25T14:00:00Z",
+    "updatedAt": "2023-12-26T15:30:00Z"
   }
 ]
+

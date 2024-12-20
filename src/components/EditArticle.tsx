@@ -3,19 +3,28 @@ import { Button, Stack, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 
 interface EditArticleProps {
-    article: Article;
+    article: Article | null;
 }
 
 export const EditArticle = ({ article }: EditArticleProps) => {
+    const emptyArticle = {
+        id: "",
+        title: "",
+        content: "",
+        price: 0,
+        category: "",
+        createdAt: "",
+        updatedAt: "",
+    };
+
     const form = useForm({
-        initialValues: article,
+        initialValues: article || emptyArticle,
         validate: {
             title: (value) =>
                 value.trim().length < 10 ? "Title must be at least 10 characters" : null,
             content: (value) =>
                 value.trim().length < 10 ? "Content must be at least 10 characters" : null,
-            author: (value) =>
-                value.trim().length < 2 ? "Author must be at least 2 characters" : null,
+            price: (value) => (isNaN(value) ? "Price must be a number" : null),
             category: (value) =>
                 value.trim().length < 2 ? "Category must be at least 2 characters" : null,
         },
@@ -40,10 +49,10 @@ export const EditArticle = ({ article }: EditArticleProps) => {
                     {...form.getInputProps("content")}
                 />
                 <TextInput
-                    label="Author"
+                    label="Price"
                     withAsterisk
-                    placeholder={"Author"}
-                    {...form.getInputProps("author")}
+                    placeholder={"Price"}
+                    {...form.getInputProps("price")}
                 />
                 <TextInput
                     label="Category"
