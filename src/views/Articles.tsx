@@ -1,9 +1,10 @@
-import { ActionIcon, Drawer, Flex, ModalBaseOverlayProps, Table, Title } from "@mantine/core";
+import { ActionIcon, Drawer, Flex, ModalBaseOverlayProps, Title } from "@mantine/core";
 import { Article, useArticleStore } from "../stores/useArticleStore.ts";
 import { useDisclosure } from "@mantine/hooks";
 import { EditArticle } from "../components/EditArticle.tsx";
 import { IconMaximize, IconPlus } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
+import { ArticlesTable } from "../components/ArticlesTable.tsx";
 
 export const Articles = () => {
     const { articles, selectArticle, selectedArticle, editArticle } = useArticleStore();
@@ -19,27 +20,6 @@ export const Articles = () => {
         selectArticle(null);
         open();
     };
-
-    const rows = articles.map((element) => (
-        <Table.Tr
-            key={element.id}
-            onClick={() => {
-                openDrawer(element);
-            }}
-        >
-            <Table.Td>{element.title}</Table.Td>
-            <Table.Td>{element.category}</Table.Td>
-            <Table.Td>{element.price}</Table.Td>
-        </Table.Tr>
-    ));
-
-    const ths = (
-        <Table.Tr>
-            <Table.Th>Title</Table.Th>
-            <Table.Th>Category</Table.Th>
-            <Table.Th>Price</Table.Th>
-        </Table.Tr>
-    );
 
     const expandView = () => {
         close();
@@ -65,10 +45,7 @@ export const Articles = () => {
                     <IconPlus />
                 </ActionIcon>
             </Flex>
-            <Table withTableBorder striped highlightOnHover>
-                <Table.Thead>{ths}</Table.Thead>
-                <Table.Tbody>{rows}</Table.Tbody>
-            </Table>
+            <ArticlesTable articles={articles} onRowClick={openDrawer} />
             <Drawer
                 overlayProps={modalOverlayProps}
                 position={"right"}
