@@ -2,11 +2,13 @@ import { ActionIcon, Drawer, Flex, Table, Title } from "@mantine/core";
 import { Article, useArticleStore } from "../stores/useArticleStore.ts";
 import { useDisclosure } from "@mantine/hooks";
 import { EditArticle } from "../components/EditArticle.tsx";
-import { IconPlus } from "@tabler/icons-react";
+import { IconMaximize, IconPlus } from "@tabler/icons-react";
+import { useNavigate } from "react-router-dom";
 
 export const Articles = () => {
     const { articles, selectArticle, selectedArticle } = useArticleStore();
     const [opened, { open, close }] = useDisclosure(false);
+    const navigate = useNavigate();
 
     const openDrawer = (article: Article) => {
         selectArticle(article);
@@ -39,6 +41,11 @@ export const Articles = () => {
         </Table.Tr>
     );
 
+    const expandView = () => {
+        close();
+        navigate("/articles/" + selectedArticle?.id);
+    };
+
     return (
         <>
             <Flex my={"md"} align={"center"} justify={"space-between"}>
@@ -58,7 +65,23 @@ export const Articles = () => {
                 <Table.Thead>{ths}</Table.Thead>
                 <Table.Tbody>{rows}</Table.Tbody>
             </Table>
-            <Drawer position={"right"} size={"lg"} opened={opened} onClose={close}>
+            <Drawer position={"right"} size={"lg"} opened={opened} onClose={close} pos={"relative"}>
+                <ActionIcon
+                    pos={"absolute"}
+                    top={12}
+                    left={12}
+                    style={{
+                        zIndex: 10000000000,
+                    }}
+                    color={"gray"}
+                    variant="light"
+                    aria-label="Close drawer"
+                    onClick={expandView}
+                >
+                    <IconMaximize />
+                </ActionIcon>
+                <Title order={1}>{selectedArticle ? "Edit Article" : "Create Article"}</Title>
+
                 <EditArticle article={selectedArticle} />
             </Drawer>
         </>
