@@ -1,5 +1,5 @@
-# Prim State
+# State
 
-A PoC for how to handle state in Prim Web.
+A PoC for how to handle state in a robust way
 
-![Prim State](./public/screenshot.png)
+![State](./public/screenshot.png)
