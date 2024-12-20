@@ -65,7 +65,7 @@ export const Articles = () => {
                 <Table.Thead>{ths}</Table.Thead>
                 <Table.Tbody>{rows}</Table.Tbody>
             </Table>
-            <Drawer position={"right"} size={"lg"} opened={opened} onClose={close} pos={"relative"}>
+            <Drawer position={"right"} size={"md"} opened={opened} onClose={close} pos={"relative"}>
                 <ActionIcon
                     pos={"absolute"}
                     top={12}
